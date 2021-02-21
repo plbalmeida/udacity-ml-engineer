@@ -18,6 +18,10 @@ Mitigating carbon dioxide emissions is the challenge of the future to stabilize 
 
 The data set that will be used in this project is available by *Our World in Data* [[14]](#14), it's a data set that contains global carbon dioxide emissions since 1750 to 2019.
 
+## Benchmark model
+
+The scientific article, *Forecasting the carbon dioxide emissions in 53 countries and regions using a non-equigap grey model*[[15]](#15), achieved a MAPE of less than 10%, this will be the baseline for this project.
+
 ## Solution statement
 
 The solution proposed for this project is the implementation of DeepAR. The Amazon SageMaker DeepAR forecasting algorithm is a supervised learning algorithm for forecasting scalar (one-dimensional) time series using recurrent neural networks (RNN). 
@@ -64,3 +68,5 @@ The project will be implemented in the following steps:
 <a id="13">[13]</a> Kainuma M.; Matsuoka, Y.; Morita, T. (2000) The AIM/end-use model and its application to forecast Japanese carbon dioxide emissions Eur. J. Oper. Res. 122 416–25 
 
 <a id="14">[14]</a> Data on CO2 and Greenhouse Gas Emissions, 21 February 2021. In https://github.com/owid/co2-data.
+
+<a id="15">[15]</a> Xu, Z., Liu, L. & Wu, L. Forecasting the carbon dioxide emissions in 53 countries and regions using a non-equigap grey model. Environ Sci Pollut Res (2020). https://doi.org/10.1007/s11356-020-11638-7. In https://link.springer.com/article/10.1007/s11356-020-11638-7#Tab3.

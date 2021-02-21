@@ -56,6 +56,8 @@ The project will be implemented in the following steps:
 4) Deploying the model
   * Deploy with the visualization of the global carbon dioxide emission forecast for the next 5 years
 
+## References
+
 <a id="1">[1]</a> Knutson, T.; Kossin, J. P.; Mears, C.; Perlwitz, J.; Wehner, M. F. (2017). In https://science2017.globalchange.gov/downloads/CSSR_Ch3_Detection_and_Attribution.pdf. 
 
 <a id="2">[2]</a> US EPA, 21 February 2021. In https://www.epa.gov/ghgemissions/overview-greenhouse-gases.

@@ -34,24 +34,24 @@ The evaluation metric choosed for this project is the mean absolute percentage e
 
 <a id="1">[1]</a> Knutson, T.; Kossin, J. P.; Mears, C.; Perlwitz, J.; Wehner, M. F. (2017). In https://science2017.globalchange.gov/downloads/CSSR_Ch3_Detection_and_Attribution.pdf. 
 
-[2] US EPA, 21 February 2021. In https://www.epa.gov/ghgemissions/overview-greenhouse-gases.
+<a id="2">[2]</a> US EPA, 21 February 2021. In https://www.epa.gov/ghgemissions/overview-greenhouse-gases.
 
-[3] IPCC (2019). Shukla, P. R.; Skea, J.; Calvo Buendia, E.; Masson-Delmotte, V.; et al. (eds.). IPCC Special Report on Climate Change, Desertification, Land Degradation, Sustainable Land Management, Food Security, and Greenhouse gas fluxes in Terrestrial Ecosystems. In https://www.ipcc.ch/site/assets/uploads/2019/11/SRCCL-Full-Report-Compiled-191128.pdf.
+<a id="3">[3]</a> IPCC (2019). Shukla, P. R.; Skea, J.; Calvo Buendia, E.; Masson-Delmotte, V.; et al. (eds.). IPCC Special Report on Climate Change, Desertification, Land Degradation, Sustainable Land Management, Food Security, and Greenhouse gas fluxes in Terrestrial Ecosystems. In https://www.ipcc.ch/site/assets/uploads/2019/11/SRCCL-Full-Report-Compiled-191128.pdf.
 
-[4] Kossin, J. P.; Hall, T.; Knutson, T.; Kunkel, K. E.; Trapp, R. J.; Waliser, D. E.; Wehner, M. F. (2017). "Chapter 9: Extreme Storms". In https://science2017.globalchange.gov/chapter/9/. 
+<a id="4">[4]</a> Kossin, J. P.; Hall, T.; Knutson, T.; Kunkel, K. E.; Trapp, R. J.; Waliser, D. E.; Wehner, M. F. (2017). "Chapter 9: Extreme Storms". In https://science2017.globalchange.gov/chapter/9/. 
 
-[5] IPCC (2019). Pörtner, H.-O.; Roberts, D. C.; Masson-Delmotte, V.; Zhai, P.; et al. (eds.). In https://www.ipcc.ch/site/assets/uploads/sites/3/2019/12/SROCC_FullReport_FINAL.pdf.
+<a id="5">[5]</a> IPCC (2019). Pörtner, H.-O.; Roberts, D. C.; Masson-Delmotte, V.; Zhai, P.; et al. (eds.). In https://www.ipcc.ch/site/assets/uploads/sites/3/2019/12/SROCC_FullReport_FINAL.pdf.
 
-[6] US EPA, 19 January 2017. In https://19january2017snapshot.epa.gov/climate-impacts/climate-impacts-ecosystems_.html#Extinction.
+<a id="6">[6]</a> US EPA, 19 January 2017. In https://19january2017snapshot.epa.gov/climate-impacts/climate-impacts-ecosystems_.html#Extinction.
 
-[7] IPCC AR5 SYR (2014). The Core Writing Team; Pachauri, R. K.; Meyer, L. A. (eds.). Climate Change 2014: Synthesis Report. Contribution of Working Groups I, II and III to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change. Geneva, Switzerland: IPCC. In https://www.ipcc.ch/report/ar5/syr/.
+<a id="7">[7]</a> IPCC AR5 SYR (2014). The Core Writing Team; Pachauri, R. K.; Meyer, L. A. (eds.). Climate Change 2014: Synthesis Report. Contribution of Working Groups I, II and III to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change. Geneva, Switzerland: IPCC. In https://www.ipcc.ch/report/ar5/syr/.
 
-[8] Allen, M. R.; Dube, O. P.; Solecki, W.; Aragón-Durand, F.; et al. (2018). In https://www.ipcc.ch/site/assets/uploads/sites/2/2019/05/SR15_Chapter1_High_Res.pdf. 
+<a id="8">[8]</a> Allen, M. R.; Dube, O. P.; Solecki, W.; Aragón-Durand, F.; et al. (2018). In https://www.ipcc.ch/site/assets/uploads/sites/2/2019/05/SR15_Chapter1_High_Res.pdf. 
 
-[9] Lindsey, Rebecca; Dahlman, LuAnn (14 August 2020). In https://www.climate.gov/news-features/understanding-climate/climate-change-global-temperature.
+<a id="9">[9]</a> Lindsey, Rebecca; Dahlman, LuAnn (14 August 2020). In https://www.climate.gov/news-features/understanding-climate/climate-change-global-temperature.
 
-[10] IPCC (2018). In https://www.ipcc.ch/site/assets/uploads/sites/2/2019/05/SR15_SPM_version_report_HR.pdf.
+<a id="10">[10]</a> IPCC (2018). In https://www.ipcc.ch/site/assets/uploads/sites/2/2019/05/SR15_SPM_version_report_HR.pdf.
 
-[11] NASA, Mitigation and Adaptation 2020. In https://web.archive.org/web/20210104032553/https://climate.nasa.gov/solutions/adaptation-mitigation/.
+<a id="11">[11]</a> NASA, Mitigation and Adaptation 2020. In https://web.archive.org/web/20210104032553/https://climate.nasa.gov/solutions/adaptation-mitigation/.
 
-[12] IPCC AR5 SYR (2014). The Core Writing Team; Pachauri, R. K.; Meyer, L. A. (eds.). Climate Change 2014: Synthesis Report. Contribution of Working Groups I, II and III to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change. Geneva, Switzerland: IPCC.
+<a id="12">[12]</a> IPCC AR5 SYR (2014). The Core Writing Team; Pachauri, R. K.; Meyer, L. A. (eds.). Climate Change 2014: Synthesis Report. Contribution of Working Groups I, II and III to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change. Geneva, Switzerland: IPCC.

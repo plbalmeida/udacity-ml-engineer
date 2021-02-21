@@ -12,11 +12,11 @@ Many of the impacts mentioned are already felt at the current level of warming, 
 
 ## Problem statement
 
-???
+Mitigating carbon dioxide emissions is the challenge of the future to stabilize global warming [[13]](#13). Given this scenario, predictive models can be useful to provide projections of global carbon dioxide emissions, which the results can collaborate with the planning of measures for mitigation and control of future emissions. Therefore, this project aims to implement a predictive model for global carbon dioxide emissions.
 
 ## Datasets and inputs
 
-???
+The data set that will be used in this project is available by *Our World in Data* [[14]](#14)
 
 ## Solution statement
 
@@ -48,10 +48,14 @@ The evaluation metric choosed for this project is the mean absolute percentage e
 
 <a id="8">[8]</a> Allen, M. R.; Dube, O. P.; Solecki, W.; Aragón-Durand, F.; et al. (2018). In https://www.ipcc.ch/site/assets/uploads/sites/2/2019/05/SR15_Chapter1_High_Res.pdf. 
 
-<a id="9">[9]</a> Lindsey, Rebecca; Dahlman, LuAnn (14 August 2020). In https://www.climate.gov/news-features/understanding-climate/climate-change-global-temperature.
+<a id="9">[9]</a> Lindsey, R.; Dahlman, L. (14 August 2020). In https://www.climate.gov/news-features/understanding-climate/climate-change-global-temperature.
 
 <a id="10">[10]</a> IPCC (2018). In https://www.ipcc.ch/site/assets/uploads/sites/2/2019/05/SR15_SPM_version_report_HR.pdf.
 
 <a id="11">[11]</a> NASA, Mitigation and Adaptation 2020. In https://web.archive.org/web/20210104032553/https://climate.nasa.gov/solutions/adaptation-mitigation/.
 
 <a id="12">[12]</a> IPCC AR5 SYR (2014). The Core Writing Team; Pachauri, R. K.; Meyer, L. A. (eds.). Climate Change 2014: Synthesis Report. Contribution of Working Groups I, II and III to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change. Geneva, Switzerland: IPCC.
+
+<a id="13">[13]</a> Kainuma M.; Matsuoka, Y.; Morita, T. (2000) The AIM/end-use model and its application to forecast Japanese carbon dioxide emissions Eur. J. Oper. Res. 122 416–25 
+
+<a id="14">[14]</a> https://github.com/owid/co2-data

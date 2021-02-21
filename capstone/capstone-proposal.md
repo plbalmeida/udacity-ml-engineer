@@ -1,4 +1,4 @@
-## Carbon dioxide world emission prediction
+# Carbon dioxide world emission prediction
 
 Project proposal by Pedro Almeida
 

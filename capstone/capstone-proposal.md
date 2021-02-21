@@ -16,7 +16,14 @@ Mitigating carbon dioxide emissions is the challenge of the future to stabilize 
 
 ## Datasets and inputs
 
-The data set that will be used in this project is available by *Our World in Data* [[14]](#14), it's a data set that contains global carbon dioxide emissions since 1750 to 2019.
+The data set that will be used in this project is available by *Our World in Data* [[14]](#14), The main characteristics of the data set are described below:
+
+* It's a .csv file
+* Contains observations since 1750 to 2019
+* It has 23.708 rows x 55 columns
+* Features `iso_code` and `country` are object type, all others features are numeric
+
+In this project will be used `year` and `co2` features in a univariate time series approach.
 
 ## Benchmark model
 
@@ -37,9 +44,17 @@ The evaluation metric choosed for this project is the mean absolute percentage e
 The project will be implemented in the following steps:
 
 1) Data Preprocessing
+  * `co2` feature will be grouped by `year` for a annualy global forecasting of carbon dioxide emissions
+  * Data will be suitable for the DeepAR model
+  * 4 sets of data will be generated for training and testing 
 2) Training the model
+  * Pre-processed data will be sent to s3
+  * The estimator object will be defined
+  * Hyperparameters will be defined, and the estimator containing DeepAR will be trained with the data
 3) Evaluating the model
+  * The MAPE of each test set will be calculated, a boxplot will be generated to assess the variation by quartiles and to obtain the median
 4) Deploying the model
+  * Deploy with the visualization of the global carbon dioxide emission forecast for the next 5 years
 
 <a id="1">[1]</a> Knutson, T.; Kossin, J. P.; Mears, C.; Perlwitz, J.; Wehner, M. F. (2017). In https://science2017.globalchange.gov/downloads/CSSR_Ch3_Detection_and_Attribution.pdf. 
 

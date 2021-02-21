@@ -58,4 +58,4 @@ The evaluation metric choosed for this project is the mean absolute percentage e
 
 <a id="13">[13]</a> Kainuma M.; Matsuoka, Y.; Morita, T. (2000) The AIM/end-use model and its application to forecast Japanese carbon dioxide emissions Eur. J. Oper. Res. 122 416–25 
 
-<a id="14">[14]</a> https://github.com/owid/co2-data
+<a id="14">[14]</a> Data on CO2 and Greenhouse Gas Emissions, 21 February 2021. In https://github.com/owid/co2-data.

@@ -33,7 +33,7 @@ The evaluation metric choosed for this project is the mean absolute percentage e
 The project will be implemented in the following steps:
 
 1) Data Preprocessing
-2) Training model
+2) Training the model
 3) Evaluating the model
 4) Deploying the model
 

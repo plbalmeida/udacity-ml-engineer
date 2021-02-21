@@ -16,11 +16,11 @@ Mitigating carbon dioxide emissions is the challenge of the future to stabilize 
 
 ## Datasets and inputs
 
-The data set that will be used in this project is available by *Our World in Data* [[14]](#14)
+The data set that will be used in this project is available by *Our World in Data* [[14]](#14), it's a data set that contains global carbon dioxide emissions since 1750 to 2019.
 
 ## Solution statement
 
-???
+The solution proposed for this project is the implementation of DeepAR. The Amazon SageMaker DeepAR forecasting algorithm is a supervised learning algorithm for forecasting scalar (one-dimensional) time series using recurrent neural networks (RNN). 
 
 ## Evaluation metrics
 
@@ -30,7 +30,12 @@ The evaluation metric choosed for this project is the mean absolute percentage e
 
 ## Project design
 
-???
+The project will be implemented in the following steps:
+
+1) Data Preprocessing
+2) Training model
+3) Evaluating the model
+4) Deploying the model
 
 <a id="1">[1]</a> Knutson, T.; Kossin, J. P.; Mears, C.; Perlwitz, J.; Wehner, M. F. (2017). In https://science2017.globalchange.gov/downloads/CSSR_Ch3_Detection_and_Attribution.pdf. 
 

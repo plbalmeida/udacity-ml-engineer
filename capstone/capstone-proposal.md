@@ -26,7 +26,7 @@ Many of the impacts mentioned are already felt at the current level of warming, 
 
 The evaluation metric choosed for this project is the mean absolute percentage error (MAPE), is a measure of prediction accuracy of a forecasting method in statistics, for example in trend estimation, also used as a loss function for regression problems in machine learning. It usually expresses the accuracy as a ratio defined by the formula:
 
-### $$M = \frac{1}{n} \sum_{t=1}^{n} \frac{\mid{}{\widehat{y}_{t}-y_{t}}\mid{}}{y_{t}}$$
+$$M = \frac{1}{n} \sum_{t=1}^{n} \frac{\mid{}{\widehat{y}_{t}-y_{t}}\mid{}}{y_{t}}$$
 
 ## Project design
 

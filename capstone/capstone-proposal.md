@@ -20,7 +20,7 @@ The data set that will be used in this project is available by *Our World in Dat
 
 ## Benchmark model
 
-The scientific article, *Forecasting the carbon dioxide emissions in 53 countries and regions using a non-equigap grey model*[[15]](#15), achieved a MAPE of less than 10%, this will be the baseline for this project.
+The scientific article, *Forecasting the carbon dioxide emissions in 53 countries and regions using a non-equigap grey model* [[15]](#15), achieved a MAPE of less than 10%, this will be the baseline for this project.
 
 ## Solution statement
 

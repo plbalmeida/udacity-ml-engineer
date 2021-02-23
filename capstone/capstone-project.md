@@ -163,6 +163,12 @@ The evaluation metric choosed for this project is the mean absolute percentage e
   <img src="https://github.com/plbalmeida/udacity-ml-engineer/blob/main/capstone/img/test_3.png">
 </p>
 
+<p align="center">
+  <img src="https://github.com/plbalmeida/udacity-ml-engineer/blob/main/capstone/img/mape.png">
+</p>
+
+MAPE for test is around 2.29%, it's under the benchmark found
+
 ## Justification
 
 

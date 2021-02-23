@@ -14,7 +14,13 @@ Many of the impacts mentioned are already felt at the current level of warming, 
 
 Mitigating carbon dioxide emissions is the challenge of the future to stabilize global warming [[13]](#13). Given this scenario, predictive models can be useful to provide projections of global carbon dioxide emissions, which the results can collaborate with the planning of measures for mitigation and control of future emissions. Therefore, this project aims to implement a predictive model for global carbon dioxide emissions.
 
-## Datasets and inputs
+## Evaluation metrics
+
+The evaluation metric choosed for this project is the mean absolute percentage error (MAPE), is a measure of prediction accuracy of a forecasting method in statistics, for example in trend estimation, also used as a loss function for regression problems in machine learning. It usually expresses the accuracy as a ratio defined by the formula:
+
+![formula](https://latex.codecogs.com/gif.latex?\LARGE&space;MAPE=\frac{1}{n}\sum_{t=1}^{n}&space;\frac{\left&space;|\widehat{y}_{t}-y_{t}&space;\right&space;|}{y_t})
+
+## Data exploration
 
 The data set that will be used in this project is available by *Our World in Data* [[14]](#14), The main characteristics of the data set are described below:
 
@@ -25,6 +31,11 @@ The data set that will be used in this project is available by *Our World in Dat
 
 In this project will be used `year` and `co2` features in a univariate time series approach.
 
+## Exploratory Visualization
+
+
+
+
 ## Benchmark model
 
 The scientific article, *Forecasting the carbon dioxide emissions in 53 countries and regions using a non-equigap grey model* [[15]](#15), achieved a MAPE of less than 10%, this will be the baseline for this project.
@@ -32,12 +43,6 @@ The scientific article, *Forecasting the carbon dioxide emissions in 53 countrie
 ## Solution statement
 
 The solution proposed for this project is the implementation of DeepAR. The Amazon SageMaker DeepAR forecasting algorithm is a supervised learning algorithm for forecasting scalar (one-dimensional) time series using recurrent neural networks (RNN). 
-
-## Evaluation metrics
-
-The evaluation metric choosed for this project is the mean absolute percentage error (MAPE), is a measure of prediction accuracy of a forecasting method in statistics, for example in trend estimation, also used as a loss function for regression problems in machine learning. It usually expresses the accuracy as a ratio defined by the formula:
-
-![formula](https://latex.codecogs.com/gif.latex?\LARGE&space;MAPE=\frac{1}{n}\sum_{t=1}^{n}&space;\frac{\left&space;|\widehat{y}_{t}-y_{t}&space;\right&space;|}{y_t})
 
 ## Project design
 

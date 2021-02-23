@@ -33,6 +33,8 @@ In this project will be used `year` and `co2` features in a univariate time seri
 
 ## Exploratory Visualization
 
+![alt text](https://github.com/plbalmeida/udacity-ml-engineer/capstone/img/ts_observed.png?raw=true)
+
 ## Algorithms and Techniques
 
 ## Benchmark

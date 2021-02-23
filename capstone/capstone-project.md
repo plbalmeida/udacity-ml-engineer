@@ -83,29 +83,85 @@ The scientific article, *Forecasting the carbon dioxide emissions in 53 countrie
 
 ## Solution statement
 
-The solution proposed for this project is the implementation of DeepAR. The Amazon SageMaker DeepAR forecasting algorithm is a supervised learning algorithm for forecasting scalar (one-dimensional) time series using recurrent neural networks (RNN). 
+The solution proposed for this project is the implementation of DeepAR. The Amazon SageMaker DeepAR forecasting algorithm is a supervised learning algorithm for forecasting scalar (one-dimensional) time series using recurrent neural networks (RNN) to predict global carbon dioxide emissions.
 
 ## Data Preprocessing
 
 `co2` feature was grouped by `year` for a annualy global forecasting of carbon dioxide emissions.
 
-Data was suitable for the DeepAR model.
+The data were suitable for the DeepAR model, following the pattern in joson format:
 
-4 sets of data will be generated for training and testing. 
+`
+{"start": ..., "target": [1, 5, 10, 2], "dynamic_feat": [[0, 1, 1, 0]]}
+`
+
+4 sets of data was generated for training and testing. 
 
 ## Implementation
 
 Pre-processed data was sent to S3 bucket.
 
 The estimator object was defined.
+
+`
+estimator = sagemaker.estimator.Estimator(
+    image_uri=image_name,
+    sagemaker_session=sagemaker_session,
+    role=role,
+    train_instance_count=1,
+    train_instance_type='ml.c4.2xlarge',
+    base_job_name='deepar-co2-emission',
+    output_path=s3_output_path
+)
+`
   
 ## Refinement
 
 Hyperparameters was defined, and the estimator containing DeepAR was trained with the data.
 
+`
+freq = '12M'
+hyperparameters = {
+    'time_freq': freq,
+    'epochs': '400',
+    'early_stopping_patience': '40',
+    'mini_batch_size': '64',
+    'learning_rate': '5E-4',
+    'context_length': '5',
+    'prediction_length': '5'
+}
+`
+
 ## Model Evaluation and Validation
 
-The MAPE of each test set will be calculated, a boxplot will be generated to assess the variation by quartiles and to obtain the median.
+The method that can be used for cross-validating the time-series model is cross-validation on a rolling basis, or *Time Series Split Cross-Validation*. Start with a small subset of data for training purpose, forecast for the later data points and then checking the accuracy for the forecasted data points. The same forecasted data points are then included as part of the next training dataset and subsequent data points are forecasted. What we need to do is to create 4 pairs of training/test sets that follow those two rules:
+
+* every test set contains unique observations
+* observations from the training set occur before their corresponding test set 
+
+Source: https://medium.com/@soumyachess1496/cross-validation-in-time-series-566ae4981ce4.
+
+<p align="center">
+  <img src="https://github.com/plbalmeida/udacity-ml-engineer/blob/main/capstone/img/time-series-cross-validation.png">
+</p>
+
+The evaluation metric choosed for this project is the mean absolute percentage error (MAPE), model errors were calculated using this metric for the four sets of test data.
+
+<p align="center">
+  <img src="https://github.com/plbalmeida/udacity-ml-engineer/blob/main/capstone/img/test_0.png">
+</p>
+
+<p align="center">
+  <img src="https://github.com/plbalmeida/udacity-ml-engineer/blob/main/capstone/img/test_1.png">
+</p>
+
+<p align="center">
+  <img src="https://github.com/plbalmeida/udacity-ml-engineer/blob/main/capstone/img/test_2.png">
+</p>
+
+<p align="center">
+  <img src="https://github.com/plbalmeida/udacity-ml-engineer/blob/main/capstone/img/test_3.png">
+</p>
 
 ## Justification
 

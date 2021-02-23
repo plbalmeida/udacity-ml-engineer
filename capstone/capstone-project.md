@@ -47,9 +47,9 @@ The solution proposed for this project is the implementation of DeepAR. The Amaz
 
 `co2` feature was grouped by `year` for a annualy global forecasting of carbon dioxide emissions.
 
-Data was suitable for the DeepAR model
+Data was suitable for the DeepAR model.
 
-4 sets of data will be generated for training and testing 
+4 sets of data will be generated for training and testing. 
 
 ## Implementation
 
@@ -63,7 +63,7 @@ Hyperparameters was defined, and the estimator containing DeepAR was trained wit
 
 ## Model Evaluation and Validation
 
-The MAPE of each test set will be calculated, a boxplot will be generated to assess the variation by quartiles and to obtain the median
+The MAPE of each test set will be calculated, a boxplot will be generated to assess the variation by quartiles and to obtain the median.
 
 ## Justification
 

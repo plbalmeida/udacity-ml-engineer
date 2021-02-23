@@ -33,10 +33,9 @@ In this project will be used `year` and `co2` features in a univariate time seri
 
 ## Exploratory Visualization
 
+## Algorithms and Techniques
 
-
-
-## Benchmark model
+## Benchmark
 
 The scientific article, *Forecasting the carbon dioxide emissions in 53 countries and regions using a non-equigap grey model* [[15]](#15), achieved a MAPE of less than 10%, this will be the baseline for this project.
 
@@ -44,22 +43,31 @@ The scientific article, *Forecasting the carbon dioxide emissions in 53 countrie
 
 The solution proposed for this project is the implementation of DeepAR. The Amazon SageMaker DeepAR forecasting algorithm is a supervised learning algorithm for forecasting scalar (one-dimensional) time series using recurrent neural networks (RNN). 
 
-## Project design
+## Data Preprocessing
 
-The project will be implemented in the following steps:
+`co2` feature was grouped by `year` for a annualy global forecasting of carbon dioxide emissions.
 
-1) Data Preprocessing
-  * `co2` feature will be grouped by `year` for a annualy global forecasting of carbon dioxide emissions
-  * Data will be suitable for the DeepAR model
-  * 4 sets of data will be generated for training and testing 
-2) Training the model
-  * Pre-processed data will be sent to s3
-  * The estimator object will be defined
-  * Hyperparameters will be defined, and the estimator containing DeepAR will be trained with the data
-3) Evaluating the model
-  * The MAPE of each test set will be calculated, a boxplot will be generated to assess the variation by quartiles and to obtain the median
-4) Deploying the model
-  * Deploy with the visualization of the global carbon dioxide emission forecast for the next 5 years
+Data was suitable for the DeepAR model
+
+4 sets of data will be generated for training and testing 
+
+## Implementation
+
+Pre-processed data was sent to S3 bucket.
+
+The estimator object was defined.
+  
+## Refinement
+
+Hyperparameters was defined, and the estimator containing DeepAR was trained with the data.
+
+## Model Evaluation and Validation
+
+The MAPE of each test set will be calculated, a boxplot will be generated to assess the variation by quartiles and to obtain the median
+
+## Justification
+
+
 
 ## References
 

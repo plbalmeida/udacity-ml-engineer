@@ -42,7 +42,7 @@ The time series of the global carbon dioxide emission was decomposed to assess i
 
 Running the plots of the observed, trend, seasonal, and residual time series, we can see that the results doesn't interesting. So let's try another approach to extract some insights about the time series. Next, the amount of carbon dioxide emission will be analyzed every 50 years, since 1850.
 
-![alt text](https://github.com/plbalmeida/udacity-ml-engineer/blob/main/capstone/img/emissions_by_period.png?style=centerme)
+<img align="center" src=https://github.com/plbalmeida/udacity-ml-engineer/blob/main/capstone/img/emissions_by_period.png>
 
 In the boxplot it is possible to observe the variation in the quartiles of carbon dioxide emission in the periods from 1850 to 1900, 1900 to 1950, 1950 to 2000, and 2000 to 2019. The annual averages of global carbon dioxide emissions in the period from 1950 to 2000 increased by 1,688% compared to the period from 1850 to 1900, and in the period from 2000 to 2019 emissions increased by 3,176%.
 

@@ -56,12 +56,18 @@ We can conclude so far that, on average, the percentage change from year to year
 
 ## Algorithms and Techniques
 
+The Amazon SageMaker DeepAR forecasting algorithm is a supervised learning algorithm for forecasting scalar (one-dimensional) time series using recurrent neural networks (RNN). In the following figure, a recurrent neural network, with a hidden state that is meant to carry pertinent information from one input item in the series to others.
+
+<p align="center">
+  <img src="https://miro.medium.com/max/2640/1*aIT6tmnk3qHpStkOX3gGcQ.png">
+</p>
+
 DeepAR is a methodology for producing accurate probabilistic forecasts, based on training an auto-regressive recurrent network model on a large number of related time series. According to the authors who developed the DeepAR model, it was possible to demonstrate how by applying deep learning techniques to forecasting, one can overcome many of the challenges faced by widely-used classical approaches to the problem. The scientific article shows how through extensive empirical evaluation on several real-world forecasting data sets accuracy improvements of around 15%
 compared to state-of-the-art methods [[16]](#16).
 
 During training, DeepAR accepts a training dataset and an optional test dataset. It uses the test dataset to evaluate the trained model. In general, the datasets don't have to contain the same set of time series. It's possible use a model trained on a given training set to generate forecasts for the future of the time series in the training set, and for other time series. Both the training and the test datasets consist of one or, preferably, more target time series. Each target time series can optionally be associated with a vector of feature time series and a vector of categorical features.
 
-For example, the following is an element of a training set indexed by i which consists of a target time series, $Z_{i,t}$, and two associated feature time series, $X_{i,1,t}$ and $X_{i,2,t}$:
+For example, the following is an element of a training set indexed by i which consists of a target time series, Zi,t, and two associated feature time series, Xi,1,t and Xi,2,t}:
 
 <p align="center">
   <img src="https://docs.aws.amazon.com/sagemaker/latest/dg/images/ts-full-159.base.png">

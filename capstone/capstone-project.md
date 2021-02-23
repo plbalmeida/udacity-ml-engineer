@@ -103,7 +103,7 @@ Pre-processed data was sent to S3 bucket.
 
 The estimator object was defined.
 
-`
+```python
 estimator = sagemaker.estimator.Estimator(
     image_uri=image_name,
     sagemaker_session=sagemaker_session,
@@ -113,13 +113,13 @@ estimator = sagemaker.estimator.Estimator(
     base_job_name='deepar-co2-emission',
     output_path=s3_output_path
 )
-`
+```
   
 ## Refinement
 
 Hyperparameters was defined, and the estimator containing DeepAR was trained with the data.
 
-`
+```python
 freq = '12M'
 hyperparameters = {
     'time_freq': freq,
@@ -130,7 +130,7 @@ hyperparameters = {
     'context_length': '5',
     'prediction_length': '5'
 }
-`
+```
 
 ## Model Evaluation and Validation
 

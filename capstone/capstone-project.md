@@ -63,6 +63,10 @@ During training, DeepAR accepts a training dataset and an optional test dataset.
 
 For example, the following is an element of a training set indexed by i which consists of a target time series, $Z_{i,t}$, and two associated feature time series, $X_{i,1,t}$ and $X_{i,2,t}$:
 
+<p align="center">
+  <img src="https://docs.aws.amazon.com/sagemaker/latest/dg/images/ts-full-159.base.png">
+</p>
+
 The target time series might contain missing values, which are represented by line breaks in the time series. DeepAR supports only feature time series that are known in the future. This allows you to run "what if?" scenarios. What happens, for example, if I change the price of a product in some way?
 
 Each target time series can also be associated with a number of categorical features. You can use these features to encode which groupings a time series belongs to. Categorical features allow the model to learn typical behavior for groups, which it can use to increase model accuracy. DeepAR implements this by learning an embedding vector for each group that captures the common properties of all time series in the group.

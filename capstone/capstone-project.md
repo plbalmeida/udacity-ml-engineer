@@ -56,6 +56,17 @@ We can conclude so far that, on average, the percentage change from year to year
 
 ## Algorithms and Techniques
 
+DeepAR is a methodology for producing accurate probabilistic forecasts, based on training an auto-regressive recurrent network model on a large number of related time series. According to the authors who developed the DeepAR model, it was possible to demonstrate how by applying deep learning techniques to forecasting, one can overcome many of the challenges faced by widely-used classical approaches to the problem. The scientific article shows how through extensive empirical evaluation on several real-world forecasting data sets accuracy improvements of around 15%
+compared to state-of-the-art methods [[16]](#16).
+
+During training, DeepAR accepts a training dataset and an optional test dataset. It uses the test dataset to evaluate the trained model. In general, the datasets don't have to contain the same set of time series. It's possible use a model trained on a given training set to generate forecasts for the future of the time series in the training set, and for other time series. Both the training and the test datasets consist of one or, preferably, more target time series. Each target time series can optionally be associated with a vector of feature time series and a vector of categorical features.
+
+For example, the following is an element of a training set indexed by i which consists of a target time series, $Z_{i,t}$, and two associated feature time series, $X_{i,1,t}$ and $X_{i,2,t}$:
+
+The target time series might contain missing values, which are represented by line breaks in the time series. DeepAR supports only feature time series that are known in the future. This allows you to run "what if?" scenarios. What happens, for example, if I change the price of a product in some way?
+
+Each target time series can also be associated with a number of categorical features. You can use these features to encode which groupings a time series belongs to. Categorical features allow the model to learn typical behavior for groups, which it can use to increase model accuracy. DeepAR implements this by learning an embedding vector for each group that captures the common properties of all time series in the group.
+
 ## Benchmark
 
 The scientific article, *Forecasting the carbon dioxide emissions in 53 countries and regions using a non-equigap grey model* [[15]](#15), achieved a MAPE of less than 10%, this will be the baseline for this project.
@@ -121,3 +132,5 @@ The MAPE of each test set will be calculated, a boxplot will be generated to ass
 <a id="14">[14]</a> Data on CO2 and Greenhouse Gas Emissions, 21 February 2021. In https://github.com/owid/co2-data.
 
 <a id="15">[15]</a> Xu, Z., Liu, L. & Wu, L. Forecasting the carbon dioxide emissions in 53 countries and regions using a non-equigap grey model. Environ Sci Pollut Res (2020). https://doi.org/10.1007/s11356-020-11638-7. In https://link.springer.com/article/10.1007/s11356-020-11638-7#Tab3.
+
+<a id="16">[16]</a> Valentin Flunkert, David Salinas, and Jan Gasthaus. DeepAR: Probabilistic forecasting with autoregressive recurrent networks. CoRR, abs/1704.04110, 2017. URL http://arxiv.org/abs/1704.04110.

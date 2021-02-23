@@ -33,7 +33,12 @@ In this project will be used `year` and `co2` features in a univariate time seri
 
 ## Exploratory Visualization
 
+The time series of the global carbon dioxide emission was decomposed to assess its seasonality, trend and error.
+
 ![alt text](https://github.com/plbalmeida/udacity-ml-engineer/blob/main/capstone/img/ts_observed.png)
+![alt text](https://github.com/plbalmeida/udacity-ml-engineer/blob/main/capstone/img/ts_seasonal.png)
+![alt text](https://github.com/plbalmeida/udacity-ml-engineer/blob/main/capstone/img/ts_trend.png)
+![alt text](https://github.com/plbalmeida/udacity-ml-engineer/blob/main/capstone/img/ts_error.png)
 
 ## Algorithms and Techniques
 

@@ -167,11 +167,9 @@ The evaluation metric choosed for this project is the mean absolute percentage e
   <img src="https://github.com/plbalmeida/udacity-ml-engineer/blob/main/capstone/img/mape.png">
 </p>
 
-MAPE for test is around 2.29%, it's under the benchmark found
-
 ## Justification
 
-
+MAPE for test is around 2.29%, it's under the benchmark found of 10%. Follow the link with the deployment of predictions for the following years: http://capstone-deploy.s3-website-sa-east-1.amazonaws.com/
 
 ## References
 
